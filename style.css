@@ -1,0 +1,138 @@
+/* colors appear in the code editor */
+
+:root {
+    --PaleBlue: hsl(225, 100%, 94%);
+    --BrightBlue: hsl(245, 75%, 52%);
+    --VeryPaleBlue: hsl(225, 100%, 98%);
+    --DesaturatedBlue: hsl(224, 23%, 55%);
+    --DarkBlue: hsl(223, 47%, 23%);
+}
+
+body {
+    background-color: hsl(225, 100%, 94%);
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+main {
+    background-color: white;
+    background-image: url(/images/illustration-hero.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100% 30%;
+    width: 25%;
+    height: 550px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-weight: 900;
+    margin-top: 160px;
+    margin-bottom: -1px;
+    font-size: 1.625rem;
+}
+
+h1, #plan {
+    color: hsl(223, 47%, 23%);
+}
+
+p {
+    text-align: center;
+}
+
+#offer {
+    background-color: hsl(225, 100%, 98%);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 75%;
+    height: 15%;
+    border-radius: 10px;
+}
+
+img {
+    margin-left: 20px;
+    margin-right: 15px;
+}
+
+#annual {
+    display: flex;
+    flex-direction: column;
+    margin-right: 55px;
+}
+
+#plan {
+    font-weight: 700;
+}
+
+p, #price {
+    font-size: 0.9375rem;
+    color: hsl(224, 23%, 55%);
+    font-weight: 400;
+}
+
+a {
+    font-size: 0.875rem;
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+button {
+    background-color: hsl(245, 75%, 52%);
+    width: 75%;
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 0.875rem;
+    color: white;
+    box-shadow: 0 15px 20px 0 hsla(245, 75%, 52%, .25);
+}
+
+button:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+#cancel {
+    font-weight: 700;
+}
+
+#cancel:hover {
+    color: hsl(223, 47%, 23%);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 375px) {
+    
+    main {
+        width: 90%;
+    }
+
+    #offer {
+        width: 85%;
+    }
+
+    button {
+        width: 85%;
+    }
+
+}
